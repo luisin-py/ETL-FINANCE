@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/etl_finance.egg-info/PKG-INFO
+src/etl_finance.egg-info/SOURCES.txt
+src/etl_finance.egg-info/dependency_links.txt
+src/etl_finance.egg-info/entry_points.txt
+src/etl_finance.egg-info/requires.txt
+src/etl_finance.egg-info/top_level.txt

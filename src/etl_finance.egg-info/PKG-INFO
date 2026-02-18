@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: etl_finance
+Version: 0.1.0
+Summary: ETL and Dashboard for Brazilian Stocks
+Author: Your Name
+Requires-Dist: yfinance
+Requires-Dist: pandas
+Requires-Dist: streamlit
+Requires-Dist: plotly
+Requires-Dist: matplotlib
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: summary

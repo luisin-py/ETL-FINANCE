@@ -1,0 +1,2 @@
+[console_scripts]
+etl-finance = etl:run_etl
