@@ -1,9 +1,10 @@
-yfinance
-pandas
-streamlit
-plotly
-matplotlib
-tensorflow
+yfinance>=0.2.0
+pandas>=2.0.0
+streamlit>=1.35.0
+plotly>=5.0.0
+matplotlib>=3.0.0
 scikit-learn
 numpy
 joblib
+# tensorflow removed as it's not used (using GradientBoosting for LSTM fallback)
+protobuf<5.0.0dev
