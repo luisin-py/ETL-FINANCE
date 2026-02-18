@@ -108,7 +108,7 @@ def main():
                             low=df['low'], close=df['close'],
                             name='Preço'))
             fig.update_layout(title=f'Histórico - {selected_ticker}', template='plotly_dark', height=600)
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width='stretch')
 
     # Tab 2: Predictions
     with tab2:
@@ -150,7 +150,7 @@ def main():
             fig_pred.update_layout(title=f'Projeção de Preço (30 Dias) - {model_option}', 
                                    xaxis_title='Data', yaxis_title='Preço (R$)', template='plotly_dark', height=600)
             
-            st.plotly_chart(fig_pred, use_container_width=True)
+            st.plotly_chart(fig_pred, width='stretch')
             
             # Show Raw Forecast Data
             if st.checkbox("Mostrar tabela de previsão"):
@@ -198,7 +198,7 @@ def main():
                 
                 fig_pie = go.Figure(data=[go.Pie(labels=list(weights.keys()), values=list(weights.values()), hole=.4)])
                 fig_pie.update_layout(template='plotly_dark')
-                st.plotly_chart(fig_pie, use_container_width=True)
+                st.plotly_chart(fig_pie, width='stretch')
                 
             # Enhanced Markowitz Visualization
             if 'all_portfolios' in portfolio_data and portfolio_data['all_portfolios']:
@@ -235,7 +235,7 @@ def main():
                 
                 fig_sec = go.Figure(data=[go.Pie(labels=list(sector_weights.keys()), values=list(sector_weights.values()), hole=.4)])
                 fig_sec.update_layout(template='plotly_dark', title="Por Setor")
-                st.plotly_chart(fig_sec, use_container_width=True)
+                st.plotly_chart(fig_sec, width='stretch')
 
     # Tab 5: Personal Portfolio
     with tab5:
